@@ -1,0 +1,60 @@
+.wrapper{
+    background: white;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+  
+}
+h1{
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.game-box{
+    margin-top: 0.6rem;
+    padding: 0.5rem;
+}
+.inputs{
+    margin-bottom: 0.8rem;
+
+}
+.inputs input{
+    width: 46px;
+    height: 47px;
+    background: none;
+    color: purple;
+    text-align: center;
+    border: 0.5px solid rgb(72, 69, 69);
+    border-radius: 5px;
+    margin: 0.2rem;
+    text-transform: uppercase;
+}
+
+.details{
+    margin-bottom: 2rem;
+}
+.tip span{
+    margin-left: 0.3rem;
+}
+.guess span{
+    margin-left: 0.3rem;
+}
+.wrong span{
+    margin-left: 0.3rem;
+}
+#reset-btn{
+    color: white;
+    background: purple;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+.input-check{
+    opacity: 0;
+    z-index: -999
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background: purple;
+                display: grid;
+                place-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+           
+        
+            input{
+                width: 2rem;
+            }
+            p{
+                margin-bottom: 0.5rem;
+                font-size: 20px;
+            }
+            .wrapper{
+                background: white;
+                width: 350px;
+                height: 350px;
+                margin: 0 auto;
+                border-radius: 5px;
+              
+            }
+            h1{
+                font-weight: 500;
+                margin-bottom: 0.3rem;
+                padding-bottom: 0.2rem;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+            }
+            .game-box{
+                margin-top: 0.6rem;
+                padding: 0.5rem;
+            }
+            .inputs{
+                margin-bottom: 0.8rem;
+
+            }
+            .inputs input{
+                width: 46px;
+                height: 47px;
+                background: none;
+                color: purple;
+                text-align: center;
+                border: 0.5px solid rgb(72, 69, 69);
+                border-radius: 5px;
+                margin: 0.2rem;
+                text-transform: uppercase;
+            }
+           
+            .details{
+                margin-bottom: 2rem;
+            }
+            .tip span{
+                margin-left: 0.3rem;
+            }
+            .guess span{
+                margin-left: 0.3rem;
+            }
+            .wrong span{
+                margin-left: 0.3rem;
+            }
+            #reset-btn{
+                color: white;
+                background: purple;
+                border: none;
+                padding: 0.8rem;
+                border-radius: 5px;
+                text-align: center;
+                width: 100%;
+            }
+            .input-check{
+                opacity: 0;
+                z-index: -999
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="mover"></div>
+        <div class="wrapper">
+            <h1>Guessing game</h1>
+            <div class="game-box">
+                <input type="text" class="input-check" maxlength="1"/>
+                <div class="inputs">
+                </div>
+                <div class="details">
+                    <p class="tip">Hint:<span></span></p>
+                    <p class="guess">Remaining guesses:<span></span></p>
+                    <p class="wrong">wrong letters:<span></span></p>
+                    <P class="time">Time left:<span>60</span>s</P>
+                </div>
+                <button id="reset-btn">Reset Game</button>
+            </div>
+           
+        </div>
+        <script src="js/word.js"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
