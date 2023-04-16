@@ -88,5 +88,3 @@ document.addEventListener("keydown", () => inputCheck.focus());
 
 inputs.addEventListener("click", () => inputCheck.focus())
 
-const arr= ["boy", "girl"]
-console.log(arr[1])
